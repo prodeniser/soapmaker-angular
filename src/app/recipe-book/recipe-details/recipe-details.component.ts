@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-details.component.css']
 })
 export class RecipeDetailsComponent implements OnInit {
+  collapsed: boolean = true
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

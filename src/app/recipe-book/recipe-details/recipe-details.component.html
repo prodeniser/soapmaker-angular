@@ -1,1 +1,28 @@
 <p>recipe-details works!</p>
+
+<div class="row">
+  <div class="col-xs-12">
+    <h1 class="list-group-item-heading">Recipe Name</h1>
+    <h4 class="list-group-item-heading">Recipe batch size</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h4 class="list-group-item-heading">Ingredients</h4>
+    <!-- <p class="list-group-item-text">{{ recipe.ingredients.join(', ') }}</p> -->
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle"(click)="collapsed = !collapsed">
+        Manage <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+        <li><a href="">Add to Shopping</a></li>
+        <li><a href="">Edit</a></li>
+        <li><a href="">Delete</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
