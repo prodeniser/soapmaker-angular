@@ -2,9 +2,9 @@ export class Recipe {
   public name: string;
   public description: string;
   public batchSize: number;
-  public ingredients: string[];
+  public ingredients: any[];
 
-  constructor(name: string, description: string, size: number, ingredients: string[]) {
+  constructor(name: string, description: string, size: number, ingredients: any[]) {
     this.name = name;
     this.description = description;
     // in ounces

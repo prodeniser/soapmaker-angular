@@ -1,4 +1,4 @@
-<p>recipe-list works!</p>
+<p>recipe-list</p>
 <div class="row">
   <div class="col-xs-12">
     <button class="btn btn-success">New Recipe</button>
@@ -7,15 +7,6 @@
 <hr>
 <div class="row">
   <div *ngFor="let recipe of recipes" class="col-xs-12">
-    <a href="#" class="list-group-item clearfix">
-      <div class="pull-left">
-        <h4 class="list-group-item-heading">{{ recipe.name }} ({{ recipe.batchSize }}oz)</h4>
-        <p class="list-group-item-text">{{ recipe.description }}</p>
-      </div>
-      <div class="pull-right">
-        <h5 class="list-group-item-heading">Ingredients</h5>
-        <p class="list-group-item-text">{{ recipe.ingredients.length }}</p>
-      </div>
-    </a>
+    <app-recipe-item [recipe]="recipe"></app-recipe-item>
   </div>
 </div>
