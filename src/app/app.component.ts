@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'soapmaker';
+  currentFeature = 'recipe';
+
+  onNavigation(feature: string) {
+    this.currentFeature = feature;
+  }
 }
