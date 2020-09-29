@@ -1,15 +1,19 @@
-<p>recipe-details works!</p>
-
 <div class="row">
   <div class="col-xs-12">
-    <h1 class="list-group-item-heading">Recipe Name</h1>
-    <h4 class="list-group-item-heading">Recipe batch size</h4>
+    <h1 class="list-group-item-heading">{{ recipe.name }}</h1>
+    <h4 class="list-group-item-heading">{{ recipe.batchSize }}oz</h4>
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
     <h4 class="list-group-item-heading">Ingredients</h4>
-    <!-- <p class="list-group-item-text">{{ recipe.ingredients.join(', ') }}</p> -->
+    <p class="list-group-item-text">{{ recipe.ingredients.join(', ') }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h4 class="list-group-item-heading">Description</h4>
+    <p class="list-group-item-text">{{ recipe.description }}</p>
   </div>
 </div>
 <div class="row">
